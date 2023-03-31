@@ -1,0 +1,27 @@
+{
+  "name": "jest-e2e",
+  "version": "1.0.0",
+  "description": "Test_JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "SupphalakM.",
+  "license": "ISC",
+  "jest": {
+    "collectCoverage":true,
+    "reporters": [
+      "default",
+      [
+      "./node_modules/jest-html-reporter",
+      {
+      "pageTitle": "Test Report"
+      }
+      ]
+      ]
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-html-reporter": "^3.7.1"
+  }
+}
